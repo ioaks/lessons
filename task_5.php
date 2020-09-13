@@ -110,17 +110,10 @@
                                     ];
                                     foreach ($people as $person) {
                                         echo '<div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">';
-                                            echo '<img 
-                                                src="' . $person['img_src'] . '" 
-                                                alt="' . $person['surname'] . '" 
-                                                class="img-thumbnail img-responsive rounded-circle" 
-                                                style="width:5rem; height: 5rem;">';
+                                            echo '<img src="' . $person['img_src'] . '" alt="' . $person['surname'] . '" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">';
                                             echo '<div class="ml-2 mr-3">';
-                                                echo '<h5 class="m-0">';
-                                                echo $person['surname'] . ' (' . $person['profession'] . ')';
-                                                    echo '<small class="m-0 fw-300">';
-                                                        echo $person['status'];
-                                                    echo '</small>';
+                                                echo '<h5 class="m-0">' . $person['surname'] . ' (' . $person['profession'] . ')';
+                                                    echo '<small class="m-0 fw-300">' . $person['status'] . '</small>';
                                                 echo '</h5>';
 
                                                 foreach ($person['link'] as $link) {
