@@ -81,11 +81,15 @@
                                 ];
 
                                 foreach ($tasks as $task) {
-
+                                        
+                                    $item_title_margin = '';
+                                        
                                     if ($task['item_title_margin']) {
                                         $item_title_margin = $task['item_title_margin'];
                                     }
-
+                                    
+                                    $progress_margin = '';
+                                        
                                     if ($task['progress_margin'] == 'mb-3') {
                                         $progress_margin = 'mb-3';
                                     } else {
