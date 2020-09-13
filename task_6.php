@@ -113,12 +113,14 @@
                             ],
                         ];
                         foreach ($people as $person) {
-
+                            
+                            $activity_status = '';
                             if ($person['activity_status'] == 'banned') {
                                 $activity_status = 'banned';
                             } else {
                                 $activity_status = 'active';
                             }
+                            
                             echo '<div class="' . $activity_status . ' rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">';
                                 echo '<img src="' . $person['img_src'] . '" alt="' . $person['surname'] . '" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">';
                                 echo '<div class="ml-2 mr-3">';
